@@ -5,4 +5,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+
+  background-image: url("https://mlhxrkjoggqr.i.optimole.com/cb:r77_.44fb7/w:1393/h:1080/q:mauto/f:best/https://yellowsprings.org/wp-content/uploads/2024/08/IMG_9615.jpg");
+  background-size: cover;
+
 }

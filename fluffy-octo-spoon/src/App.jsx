@@ -10,8 +10,13 @@ import Shop from "./components/Shop"
 
 function App() {
   const [tab, setTab] = useState("pottery");
+  const [kilnPot, setKilnPot] = useState([]);
+  
+  function savePot(pot){
+    setKilnPot(pot);
 
-
+    return true;
+  }
     
   return (
     <div>
@@ -23,11 +28,11 @@ function App() {
       </div>
       <div className="site-content">
         <div className={`${tab == 'pottery' ? '' : 'hiddenDiv'}`}>
-          <Pottery></Pottery>
+          <Pottery savePot={savePot} ></Pottery>
         </div>
 
         <div className={`${tab == 'kiln' ? '' : 'hiddenDiv'}`}>
-          <Kiln></Kiln>
+          <Kiln kilnPot={kilnPot}></Kiln>
         </div>
 
         <div className={`${tab == 'paint' ? '' : 'hiddenDiv'}`}>
