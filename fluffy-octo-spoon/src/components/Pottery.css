@@ -11,6 +11,11 @@
   width: 65vw;
   height: 88vh;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
 }
 
 #pottery-tab-right-content{
@@ -24,4 +29,27 @@
   border-radius: 5px;
   /* background-color: rgb(159, 128, 103); */
 
+}
+
+
+
+
+.row{
+  display: flex;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  
+}
+
+.filled{
+  background-image: url("https://t4.ftcdn.net/jpg/07/22/79/49/360_F_722794951_CK8itAozJuxm0uhljkuygRHje89x7fnQ.jpg");
+  background-size: cover;
+}
+
+.gridTile{
+  background-color: #e4e4d000;
 }
