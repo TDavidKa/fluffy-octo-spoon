@@ -3,8 +3,6 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-import audioFile from './redstoneElevator.mp3';
-
 import Pottery from './components/Pottery'
 import Kiln from "./components/Kiln"
 import Paint from "./components/Paint"
