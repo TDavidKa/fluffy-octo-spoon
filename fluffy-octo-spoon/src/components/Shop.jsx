@@ -13,12 +13,10 @@ function Shop() {
       
       
       <div id="shop-tab-left-content" class="tab">
-
-      <div id="kiln-display">
-        <h2>Balance: 0</h2>
-      </div>
         
       <div className="box">
+        <h2>Balance: 0</h2>
+        
         <p>This is my item</p>
           <button className="button">Buy me pls</button>
       </div>
