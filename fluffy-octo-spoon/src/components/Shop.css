@@ -1,4 +1,4 @@
-#shop-tab{
+#pottery-tab{
   width: 100vw;
   height: 90vh;
 
@@ -7,19 +7,19 @@
   align-items: center;
 }
 
-#shop-tab-left-content{
+#pottery-tab-left-content{
   width: 75vw;
   height: 88vh;
 
 }
 
-#shop-tab-right-content{
+#pottery-tab-right-content{
   width: 20vw;
   height: 88vh;
 }
 
-#shop-tab-right-content,
-#shop-tab-left-content{
+#pottery-tab-right-content,
+#pottery-tab-left-content{
 
   border-radius: 5px;
   /* background-color: rgb(159, 128, 103); */

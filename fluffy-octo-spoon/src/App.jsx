@@ -5,6 +5,8 @@ import './App.css'
 
 import Pottery from './components/Pottery'
 import Kiln from "./components/Kiln"
+import Paint from "./components/Paint"
+import Shop from "./components/Shop"
 
 function App() {
   const [tab, setTab] = useState("pottery");
@@ -16,6 +18,8 @@ function App() {
       <div className="site-header">
         <h3 onClick={() => setTab("pottery")}>Pottery</h3>
         <h3 onClick={() => setTab("kiln")}>Kiln</h3>
+        <h3 onClick={() => setTab("paint")}>Paint</h3>
+        <h3 onClick={() => setTab("shop")}>Shop</h3>
       </div>
       <div className="site-content">
         <div className={`${tab == 'pottery' ? '' : 'hiddenDiv'}`}>
@@ -24,6 +28,14 @@ function App() {
 
         <div className={`${tab == 'kiln' ? '' : 'hiddenDiv'}`}>
           <Kiln></Kiln>
+        </div>
+
+        <div className={`${tab == 'paint' ? '' : 'hiddenDiv'}`}>
+          <Paint></Paint>
+        </div>
+
+        <div className={`${tab == 'shop' ? '' : 'hiddenDiv'}`}>
+          <Shop></Shop>
         </div>
 
 

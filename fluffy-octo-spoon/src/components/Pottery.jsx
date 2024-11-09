@@ -1,20 +1,20 @@
 import { useState } from 'react'
 
-import './Pottery.css'
+import './Shop.css'
 
-function Pottery() {
-  const [tab, setTab] = useState("pottery");
+function Shop() {
+  const [tab, setTab] = useState("shop");
 
 
     
   return (
-    <div id="pottery-tab">
-      <div id="pottery-tab-left-content">
+    <div id="shop-tab">
+      <div id="shop-tab-left-content" class="tab">
 
 
     </div>
       
-      <div id="pottery-tab-right-content">
+      <div id="shop-tab-right-content" class="tab">
 
 
       </div>
@@ -24,4 +24,4 @@ function Pottery() {
   )
 }
 
-export default Pottery
+export default Shop
