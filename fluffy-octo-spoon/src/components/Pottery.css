@@ -3,6 +3,25 @@
   height: 90vh;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+#pottery-tab-left-content{
+  width: 75vw;
+  height: 88vh;
+
+}
+
+#pottery-tab-right-content{
+  width: 20vw;
+  height: 88vh;
+}
+
+#pottery-tab-right-content,
+#pottery-tab-left-content{
+
+  border-radius: 5px;
+  background-color: rgb(159, 128, 103);
+
 }

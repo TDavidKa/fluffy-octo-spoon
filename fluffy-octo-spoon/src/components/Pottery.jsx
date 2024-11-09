@@ -9,7 +9,17 @@ function Pottery() {
     
   return (
     <div id="pottery-tab">
-      <h3>Pottery Tab</h3>
+      <div id="pottery-tab-left-content">
+
+
+    </div>
+      
+      <div id="pottery-tab-right-content">
+
+
+      </div>
+
+
     </div>
   )
 }
