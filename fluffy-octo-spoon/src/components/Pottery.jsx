@@ -4,7 +4,7 @@ import './Pottery.css'
 
 function Pottery(props) {
   const [tab, setTab] = useState("pottery");
-  const [backgroundImage, setBackgroundImage] = useState("https://media.istockphoto.com/id/639487044/photo/hands-of-a-potter-creating-an-earthen-jar.jpg?s=612x612&w=0&k=20&c=gCVqR1YvUT6qZhazjpNNGzlpgh_sQQJNzXNsh0ZZEh0=");
+  const [backgroundImage, setBackgroundImage] = useState("/back.png");
   const [paths, setPaths] = useState([])
 
   let [grid, setGrid] = useState(new Array(10).fill(0).map(() => new Array(10).fill(0)));
