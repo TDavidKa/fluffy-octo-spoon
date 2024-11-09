@@ -12,14 +12,21 @@ function App() {
   const [tab, setTab] = useState("pottery");
   const [kilnPot, setKilnPot] = useState([]);
   const [fired, setFired] = useState(false);
+  const [storedPots, setStoredPots] = useState([]);
 
   function savePot(pot){
     setKilnPot(pot);
     setFired(false)
-  
 
     return true;
   }
+
+  function storePot(){
+    setStoredPots((oldPots) => [...oldPots, kilnPot]);
+    setKilnPot([]);
+  }
+
+
     
   return (
     <div>
@@ -36,7 +43,7 @@ function App() {
         </div>
 
         <div className={`${tab == 'kiln' ? '' : 'hiddenDiv'}`}>
-          <Kiln fired={fired} setFired={setFired} kilnPot={kilnPot}></Kiln>
+          <Kiln storePot={storePot} fired={fired} setFired={setFired} kilnPot={kilnPot}></Kiln>
         </div>
 
         <div className={`${tab == 'paint' ? '' : 'hiddenDiv'}`}>
@@ -44,7 +51,7 @@ function App() {
         </div>
 
         <div className={`${tab == 'shop' ? '' : 'hiddenDiv'}`}>
-          <Shop></Shop>
+          <Shop storedPots={storedPots}></Shop>
         </div>
 
 
