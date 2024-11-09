@@ -15,7 +15,7 @@ function Kiln(props) {
   return (
     <div id="kiln-tab">
   
-    
+
           <div id="kiln-display">
     
     
@@ -30,7 +30,7 @@ function Kiln(props) {
     
           <div id="kiln-functionality">
               <h3 onClick={() => fireKiln()}>Fire Pottery</h3>
-              <h3> Bring to Store </h3>
+              <h3 onClick={() => props.storePot()}> Bring to Store </h3>
           </div>
     
     

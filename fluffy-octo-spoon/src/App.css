@@ -26,8 +26,8 @@
   align-items: center;
   flex-direction: column;
   background-image: url("/back.png");
-  background-repeat: repeat;
-  background-size: 25vw 25vh;
+
+  background-size: cover;
   margin: 0;
   padding: 0;
 }
