@@ -24,6 +24,7 @@ function App() {
   return (
     <div>
       <div className="site-header">
+        <h3 id = "title">Pot-Pourri</h3>
         <h3 onClick={() => setTab("pottery")}>Pottery</h3>
         <h3 onClick={() => setTab("kiln")}>Kiln</h3>
         <h3 onClick={() => setTab("paint")}>Paint</h3>

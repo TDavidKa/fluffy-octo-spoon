@@ -43,6 +43,13 @@
   transition: all .5s;
 }
 
+#title{
+  background-color: transparent;
+  color: #C8B89E;
+  justify-content: center;
+  font-size: 3.5vh;
+}
+
 .site-header h3:hover{
   background-color: #A8845F;
   transform: scale(1.05);
