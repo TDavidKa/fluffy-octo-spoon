@@ -28,7 +28,8 @@ function Pottery(props) {
         let copy = [...grid];
 
         copy[y][x] = 0;
-        //copy[y][x] = 1 - copy[y][x]
+        copy[y][gridSize - x - 1] = 0;
+
         setGrid(copy);
     }
     
