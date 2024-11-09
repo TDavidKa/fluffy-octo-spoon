@@ -10,6 +10,15 @@ import Shop from "./components/Shop"
 
 function App() {
   const [tab, setTab] = useState("pottery");
+<<<<<<< Updated upstream
+=======
+  const [kilnPot, setKilnPot] = useState([]);
+  const [fired, setFired] = useState(false);
+  
+  function savePot(pot){
+    setKilnPot(pot);
+    setFired(false)
+>>>>>>> Stashed changes
 
 
     
@@ -27,7 +36,11 @@ function App() {
         </div>
 
         <div className={`${tab == 'kiln' ? '' : 'hiddenDiv'}`}>
+<<<<<<< Updated upstream
           <Kiln></Kiln>
+=======
+          <Kiln setFired={setFired} fired={fired} kilnPot={kilnPot}></Kiln>
+>>>>>>> Stashed changes
         </div>
 
         <div className={`${tab == 'paint' ? '' : 'hiddenDiv'}`}>

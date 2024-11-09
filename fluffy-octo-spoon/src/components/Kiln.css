@@ -5,4 +5,52 @@
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< Updated upstream
+=======
+  flex-direction: column;
+
+  background-size: cover;
+
+}
+
+#kiln-display{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+#kiln-functionality{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60vw;
+
+}
+
+#kiln-functionality h3{
+  width: 15vw;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: rgb(182, 197, 182);
+  border-radius: 10px;
+
+}
+
+#kiln-functionality h3:hover{
+  background-color: rgb(150, 166, 150);
+}
+
+.firedFilled{
+
+  background-image: url("https://thumbs.dreamstime.com/b/terracotta-surface-hardened-baked-clay-rough-seamless-digital-texture-multiple-uses-large-format-printing-commercial-214218486.jpg");
+  background-size: cover;
+
+  
+>>>>>>> Stashed changes
 }
