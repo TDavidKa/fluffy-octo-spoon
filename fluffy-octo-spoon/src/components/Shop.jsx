@@ -9,13 +9,19 @@ function Shop() {
     
   return (
     <div id="shop-tab">
-      <div id="shop-tab-left-content" class="tab">
+
       
+      
+      <div id="shop-tab-left-content" class="tab">
+
+      <div id="kiln-display">
+        <h2>Balance: 0</h2>
+      </div>
+        
       <div className="box">
         <p>This is my item</p>
           <button className="button">Buy me pls</button>
       </div>
-
         
     </div>
       
