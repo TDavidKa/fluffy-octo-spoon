@@ -29,8 +29,8 @@ function Kiln(props) {
           </div>
     
           <div id="kiln-functionality">
-              <h3 onClick={() => fireKiln()}>Fire Pottery</h3>
-              <h3 onClick={() => props.storePot()}> Bring to Store </h3>
+              <h3 className="button-30" onClick={() => fireKiln()}>Fire Pottery</h3>
+              <h3 className="button-30"  onClick={() => props.storePot()}> Bring to Display </h3>
           </div>
     
     

@@ -47,14 +47,15 @@ function Pottery(props) {
       {grid.map((row, index) => 
                 
                 ( <div className="row" key={"r" + index}>{row.map((tile, index2) => 
-                    <div onMouseOver={flipValue} onMouseDown={flipValue}  key={"r" + index + "c" + index2} className={`${index + "," + index2} gridTile ${tile == 1 ? "filled" : ""}`} style={{width: (30 / gridSize) + "vw", height: (30 / gridSize) + "vw"}}> </div>
+                    <div onMouseOver={flipValue} onMouseDown={flipValue}  key={"r" + index + "c" + index2} className={`${index + "," + index2} gridTile ${tile == 1 ? "filled" : ""}`} style={{width: (40 / gridSize) + "vw", height: (40 / gridSize) + "vw"}}> </div>
                 )} </div> )
             )}
 
     </div>
       
       <div id="pottery-tab-right-content" class="tab">
-            <h3 id="pottery-to-kiln-button" onClick={() => props.savePot(grid) && generateNewGrid(gridSize)}>Move to Kiln</h3>
+           <h3 className="button-30" id="pottery-to-kiln-button" onClick={() => generateNewGrid(gridSize)}>Reset Pottery</h3>
+            <h3 className="button-30" id="pottery-to-kiln-button" onClick={() => props.savePot(grid) && generateNewGrid(gridSize)}>Move to Kiln</h3>
 
       </div>
 
