@@ -2,7 +2,7 @@ import { useState, useEffect, React } from 'react'
 
 import './Pottery.css'
 
-function Pottery() {
+function Pottery(props) {
   const [tab, setTab] = useState("pottery");
   const [backgroundImage, setBackgroundImage] = useState("https://media.istockphoto.com/id/639487044/photo/hands-of-a-potter-creating-an-earthen-jar.jpg?s=612x612&w=0&k=20&c=gCVqR1YvUT6qZhazjpNNGzlpgh_sQQJNzXNsh0ZZEh0=");
   const [paths, setPaths] = useState([])
@@ -35,12 +35,12 @@ function Pottery() {
 }
 
   useEffect(() => {
-    generateNewGrid(10)
+    generateNewGrid(gridSize)
   }, [])
     
   return (
     <div id="pottery-tab">
-      <div id="pottery-tab-left-content" class="tab">
+      <div id="pottery-tab-left-content" className="tab">
 
 
       {grid.map((row, index) => 
@@ -53,7 +53,7 @@ function Pottery() {
     </div>
       
       <div id="pottery-tab-right-content" class="tab">
-
+            <h3 id="pottery-to-kiln-button" onClick={() => props.savePot(grid) && generateNewGrid(gridSize)}>Move to Kiln</h3>
 
       </div>
 

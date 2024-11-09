@@ -21,6 +21,11 @@
 #pottery-tab-right-content{
   width: 32vw;
   height: 88vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
 }
 
 #pottery-tab-right-content,
@@ -36,7 +41,6 @@
 
 .row{
   display: flex;
-  user-drag: none;
   -webkit-user-drag: none;
   user-select: none;
   -moz-user-select: none;
@@ -52,4 +56,14 @@
 
 .gridTile{
   background-color: #e4e4d000;
+}
+
+#pottery-to-kiln-button{
+  width: 15vw;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(175, 190, 175);
 }
