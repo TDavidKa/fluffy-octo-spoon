@@ -8,7 +8,7 @@ function Pottery() {
 
     
   return (
-    <div>
+    <div id="pottery-tab">
       <h3>Pottery Tab</h3>
     </div>
   )

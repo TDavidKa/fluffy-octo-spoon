@@ -8,7 +8,7 @@ function Kiln() {
 
     
   return (
-    <div>
+    <div id="kiln-tab">
       <h3>Kiln Tab</h3>
     </div>
   )
