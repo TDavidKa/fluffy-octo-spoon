@@ -31,7 +31,8 @@ function App() {
   return (
     <div>
       <div className="site-header">
-        <h3 id = "title">Pot-Pourri</h3>
+        <img id="title" src="https://i.imgur.com/3edKbwC.png"></img>
+        {/* <h3 id = "title">Pot-Pourri</h3> */}
         <h3 className="button-30" onClick={() => setTab("pottery")}>Pottery</h3>
         <h3 className="button-30" onClick={() => setTab("kiln")}>Kiln</h3>
         <h3 className="button-30" onClick={() => setTab("shop")}>Display</h3>

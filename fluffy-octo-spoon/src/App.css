@@ -37,7 +37,7 @@
   width: 15vw;
   height: 5vh;
   border-radius: 10px;
-  background-color: #C8B89E;
+  background-color: #bea483;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,9 +46,11 @@
 
 #title{
   background-color: transparent;
-  color: #C8B89E;
+  color: #886363;
   justify-content: center;
-  font-size: 1.5vw;
+  width: 20vw;
+  height: auto;
+
 }
 
 .site-header h3:hover{
